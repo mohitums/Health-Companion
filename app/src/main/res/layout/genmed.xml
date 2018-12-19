@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+        android:background="@mipmap/genmed">
+
+    <Button
+        android:text="Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/med"
+        android:onClick="onmed"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="Enter the name of medicine:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_marginTop="26dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:textColor="#e5e5e5"/>
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView19"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/med"
+        android:layout_alignParentStart="true"
+        tools:textColor="#e5e5e5"
+        android:layout_toStartOf="@+id/med"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lvm"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"/>
+
+    <TextView
+        android:text="Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:id="@+id/textView20"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:textColor="#e5e5e5"
+        android:layout_above="@+id/lvm"
+        android:layout_toEndOf="@+id/med"
+        android:layout_alignTop="@+id/textView19"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPersonName"
+        android:ems="10"
+        android:textColorHint="#e5e5e5"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text1"
+        android:hint="Enter medicine name"
+        android:textColor="@android:color/holo_blue_bright"
+        tools:textColor="#e5e5e5"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

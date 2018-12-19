@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+                xmlns:app2="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="@mipmap/cal">
+
+
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:textColor="#6e1e57"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:text="Calories Consumed "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6e1e57"
+        android:id="@+id/textView27"
+        android:layout_marginBottom="103dp"
+        android:layout_above="@+id/txtProgress"
+        android:layout_toStartOf="@+id/txtProgress"
+        android:layout_marginEnd="17dp"/>
+
+    <ImageButton
+        android:id="@+id/image1"
+        android:src="@drawable/add"
+        android:scaleType="fitCenter"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="plus"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/progressBar"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="0"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="Your daily Stats:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e5e5e5"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView26"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_marginStart="6dp"/>
+
+</RelativeLayout>

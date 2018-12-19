@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+              android:background="@mipmap/sym">
+
+    <TextView
+        android:text="Pain Located"
+        android:layout_width="match_parent"
+        android:textColor="#e5e5e5"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="285dp">
+
+        <RadioButton
+            android:text="Around one eye"
+            android:textColor="#e5e5e5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eye"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="On one side of your head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/one"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="On both sides of your head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/both"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:text="Accompanied By"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textColor="#e5e5e5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        >
+
+        <RadioButton
+            android:text="Dizziness"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:textColor="#e5e5e5"
+            android:id="@+id/dizzy"
+            />
+
+        <RadioButton
+            android:text="Stiff Neck"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:textColor="#e5e5e5"
+            android:id="@+id/neck"
+            />
+
+        <RadioButton
+            android:text="Sensitivity to light or noise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noise"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:textColor="#e5e5e5"
+        android:onClick="onhead"/>
+
+</LinearLayout>

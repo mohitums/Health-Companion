@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+              android:background="@mipmap/sym">
+
+    <TextView
+        android:text="Cough is:"
+        android:textColor="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvc1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="186dp">
+
+        <RadioButton
+            android:text="Dry"
+            android:textColor="#e5e5e5"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:id="@+id/dry"
+            />
+
+        <RadioButton
+            android:text="Producing phlegm or sputum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wet"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:textColor="#e5e5e5"
+        android:layout_weight="0.27">
+
+        <TextView
+            android:text="Accompanied By:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textColor="#e5e5e5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="Loss of Apetite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/appetite"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="Fever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fever"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="Sore Throat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sore"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <Button
+        android:text="CHECK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:onClick="callcough"/>
+
+</LinearLayout>

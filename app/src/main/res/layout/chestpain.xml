@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+                android:background="@mipmap/sym">
+
+    <TextView
+        android:text="Type of Pain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textColor="#e5e5e5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_weight="0.36"        >
+
+        <RadioButton
+            android:text="Achy or gnawing"
+            android:textColor="#e5e5e5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/achy"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="Sharp"
+            android:textColor="#e5e5e5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sharp"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="Squeezing or Pressure"
+            android:textColor="#e5e5e5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pressure"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <TextView
+        android:text="Accompanied By"
+        android:textColor="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:textColor="#e5e5e5"
+        android:layout_weight="0.50">
+
+        <RadioButton
+            android:text="Pain in neck,jaw,shoulder or arms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pain"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="Rapid or irregular Heartbeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heart"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="Shortness of Breadth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/breath"
+            android:textColor="#e5e5e5"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <Button
+        android:text="Check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:onClick="onchest"/>
+</LinearLayout>

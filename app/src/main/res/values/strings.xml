@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HealthCompanion</string>
+
+    <string name="dummy_button">App</string>
+    <string name="dummy_content">Choose doctor</string>
+    <string-array name="doctorlist" >
+        <item>Ahmedabad</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+        <item>Chennai</item>
+    </string-array>
+</resources>

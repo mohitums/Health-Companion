@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/sym">
+
+    <TextView
+        android:text="Pain is:"
+        android:textColor="#e5e5e5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:textColor="#e5e5e5">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <RadioButton
+                android:text="Acute"
+                android:textColor="#e5e5e5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/acute"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:text="Burning"
+                android:textColor="#e5e5e5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/burning"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:text="Chronic or ongoing"
+                android:textColor="#e5e5e5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chronic"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+        <TextView
+            android:text="Pain located in:"
+            android:textColor="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_weight="0.43"
+            android:layout_height="60dp">
+
+            <RadioButton
+                android:text="Upper Abdomen"
+                android:textColor="#e5e5e5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ustomach"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:text="Middle Abdomen"
+                android:textColor="#e5e5e5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mstomach"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:text="Lower Abdomen"
+                android:textColor="#e5e5e5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lstomach"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+        <Button
+            android:text="Check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_b_1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:onClick="stomach1"/>
+    </LinearLayout>
+
+</RelativeLayout>

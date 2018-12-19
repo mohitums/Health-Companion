@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+              android:background="@mipmap/sym">
+
+    <TextView
+        android:text="Additional Symptoms:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:textColor="#e5e5e5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <CheckBox
+        android:text="Sweating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e5e5e5"
+        android:id="@+id/c1"/>
+
+    <CheckBox
+        android:text="Dizziness and Fainting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e5e5e5"
+        android:id="@+id/c2"/>
+
+    <CheckBox
+        android:text="Fever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/c3"
+        android:textColor="#e5e5e5"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignParentStart="true"/>
+
+    <CheckBox
+        android:text="Heartburn"
+        android:textColor="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/c4"/>
+
+    <Button
+        android:text="Check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="238dp"
+        android:onClick="ondiz"/>
+
+</LinearLayout>
